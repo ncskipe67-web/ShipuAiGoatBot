@@ -9,7 +9,7 @@
         "httpOnly": true,
         "sameSite": "no_restriction",
         "session": false,
-        "firstPartyDomain": "",
+        "firstPartyDomain": "false",
         "partitionKey": null,
         "expirationDate": 1785372983,
         "storeId": null
