@@ -2,7 +2,7 @@
 	"editor.formatOnSave": false,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"prettier.singleQuote": true,
-	"prettier.trailingComma": "es5",
+	"prettier.trailingComma": "es9",
 	"prettier.printWidth": 100,
 	"prettier.bracketSpacing": true,
 	"prettier.jsxBracketSameLine": false,
