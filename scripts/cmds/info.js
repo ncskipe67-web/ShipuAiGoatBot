@@ -16,11 +16,11 @@ module.exports = {
 		envConfig: {}
 	},
 	onStart: async function ({ message }) {
-		const authorName = "Chitron Bhattacharjee";
-		const ownAge = "『20』";
+		const authorName = "ncs pro";
+		const ownAge = "『16』";
 		const messenger = " //m.me/adirexcb";
 		const authorFB = " //www.facebook.com/adirexcb";
-		const authorNumber = "+8801316655254";
+		const authorNumber = "";
 		const Status = "⩸____⩸";
 		const urls = [
 "https://drive.google.com/uc?export=view&id=1mzJeualLnMS-wABThyCQFfJsX-2hMADG",
