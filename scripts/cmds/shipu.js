@@ -13,20 +13,20 @@ const apiUrl = "https://shipu-ai.onrender.com/api.php?action=";
 module.exports = {
  config: {
  name: "shipu",
- aliases: ["lume", "lumyai", "lum", "ai", "শিপু"],
+ aliases: ["princy", "ai", "jerry", "ncs", "kipe"],
  version: "1.2",
  author: "Chitron Bhattacharjee",
  countDown: 1,
  role: 0,
  shortDescription: {
- en: "Talk with ShiPu AI (with memory and personality)"
+ en: "Talk with princy ai (with memory and personality)"
  },
  longDescription: {
- en: "Chat with Lume-powered ShiPu AI. Continues chat with memory, supports personality modes."
+ en: "Chat with princy-powered NCS pro AI. Continues chat with memory, supports personality modes."
  },
  category: "ai",
  guide: {
- en: "+shipu [message] or reply to ShiPu\n+shipu setpersonality [funny|formal|sarcastic]\nNo-prefix supported too"
+ en: "-shipu [message] or reply to ShiPu\n+shipu setpersonality [funny|formal|sarcastic]\nNo-prefix supported too"
  }
  },
 
@@ -34,7 +34,7 @@ module.exports = {
  const uid = event.senderID;
  const input = args.join(" ");
 
- if (!input) return message.reply("📩 | Please provide a message or reply to a ShiPu message.");
+ if (!input) return message.reply("📩 | Please provide a message or reply to a princy message.");
 
  // Personality setter
  if (args[0]?.toLowerCase() === "setpersonality") {
@@ -67,7 +67,7 @@ module.exports = {
  "👋 হ্যাঁ বলো, শুনছি!",
  "🤖 তুমি কি জানতে চাও আমার সম্পর্কে?",
  "🧠 লিখো কিছু, আমি ভাবছি...",
- "💬 কিছু বলো, আমি উত্তর দিবো!"
+ ""
  ];
  const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
  return api.sendMessage(randomPrompt, event.threadID, (err, info) => {
@@ -120,7 +120,7 @@ async function handleConversation(api, event, userInput) {
  console.log("⚠️ Failed to save memory.");
  }
 
- const styled = `╭────────────╮\n ▄ 🧠 𝗦𝗵𝗶𝗣𝘂 𝗔𝗜 𝘀𝗮𝗶𝗱:\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n\n\n${botReply}\n\n──────────────\n▄ 📩 𝗬𝗼𝘂: ${userInput}\n▄▄▄▄▄▄▄▄▄▄▄▄▄\n╔══════════╗\n║ 👤𝗠𝗼𝗱𝗲: ${personality}\n║ 🖊️𝗔𝘂𝘁𝗵𝗼𝗿: Chitron\n║ Bhattacharjee\n╚══════════╝`;
+ const styled = `╭────────────╮\n ▄ 🧠 NCS 𝗔𝗜 𝘀𝗮𝗶𝗱:\n▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n\n\n${botReply}\n\n──────────────\n▄ 📩 𝗬𝗼𝘂: ${userInput}\n▄▄▄▄▄▄▄▄▄▄▄▄▄\n╔══════════╗\n║ 👤𝗠𝗼𝗱𝗲: ${personality}\n║ 🖊️𝗔𝘂𝘁𝗵𝗼𝗿: Chitron\n║ Bhattacharjee\n╚══════════╝`;
 
  api.sendMessage(styled, event.threadID, (err, info) => {
  if (!info?.messageID) return;
@@ -132,6 +132,6 @@ async function handleConversation(api, event, userInput) {
  }, event.messageID);
  } catch (err) {
  console.error(err);
- api.sendMessage("⚠️ | Failed to contact ShiPu AI.", event.threadID, event.messageID);
+ api.sendMessage("⚠️ | who are you baby only my mom ncs pro😘.", event.threadID, event.messageID);
  }
 }
