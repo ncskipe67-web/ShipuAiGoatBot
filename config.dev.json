@@ -29,7 +29,7 @@
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "‌Jerry💢💢kipe 💢 auto💢reply💢girls💢hater💢ncs 💢",
+  "nickNameBot": "‌𝐣𝐞𝐫𝐫𝐲 𝐤𝐢𝐩𝐞 𝐛𝐨𝐭",
   "prefix": "-",
   "database": {
     "type": "mongodb",
