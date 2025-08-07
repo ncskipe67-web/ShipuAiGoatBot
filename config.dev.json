@@ -21,7 +21,7 @@
   },
   
   "adminBot": [
-    "61573289406150",
+    "61572065567071",
     "61550712846775"
   ],
   "whiteListMode": {
@@ -29,7 +29,7 @@
     "whiteListIds": [],
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
-  "nickNameBot": "‌𝐣𝐞𝐫𝐫𝐲 𝐤𝐢𝐩𝐞 𝐛𝐨𝐭",
+  "nickNameBot": "‌𝐣𝐞𝐫𝐫𝐲 𝐤𝐢𝐩𝐞",
   "prefix": "-",
   "database": {
     "type": "mongodb",
