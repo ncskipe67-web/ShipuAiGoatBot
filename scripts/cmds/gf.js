@@ -29,7 +29,7 @@ module.exports = {
  const imageUrl = res.data.url;
 
  return message.reply({
- body: "❤️ Here's your GF:\n𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥: Chitron Bhattacharjee",
+ body: "❤️ Here's your GF:\n𝗞𝗜𝗣𝗘 𝗝𝗘𝗥𝗥𝗬 𝗢𝗪𝗡𝗘𝗥: Chitron Bhattacharjee",
  attachment: await getStreamFromURL(imageUrl)
  });
  } catch (e) {
