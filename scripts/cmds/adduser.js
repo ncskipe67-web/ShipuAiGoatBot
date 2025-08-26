@@ -143,7 +143,7 @@ async function handleAdd({ message, event, api, args, threadsData, getLang }) {
 		msg += `⚠️ ${getLang("failedAdd", failed.reduce((a, b) => a + b.uids.length, 0))}` +
 			failed.reduce((a, b) => a += `\n • ${b.uids.join('\n ↳ ')}: ${b.type}`, "") + '\n';
 
-	msg += `━━━━━━━━━━━━━\n💖 𝘽𝙤𝙩 𝘽𝙮: Chitron Bhattacharjee`;
+	msg += `━━━━━━━━━━━━━\n💖 𝘽𝙤𝙩 𝘽𝙮: kipe jerry`;
 
 	await message.reply(msg);
 }
