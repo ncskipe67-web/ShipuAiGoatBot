@@ -18,7 +18,7 @@ module.exports = {
  },
 
  onStart: async function ({ api, args, message, event }) {
- const supportGroupId = "24061518643507258"; // ID of the support group
+ const supportGroupId = "1852950642319861"; // ID of the support group
 
  const threadID = event.threadID;
  const userID = event.senderID;
